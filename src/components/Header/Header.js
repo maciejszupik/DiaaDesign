@@ -14,7 +14,9 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     width: "100%",
     color: "white",
-    marginTop: "3vh"
+    marginTop: "3vh",
+    position: 'fixed',
+    top: 0
   },
   headerLogo: {
     minWidth: "40%",
