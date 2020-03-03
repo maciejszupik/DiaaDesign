@@ -1,9 +1,16 @@
 import React from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
     root: {
+      [theme.breakpoints.down("sm")]: {
+        fontSize: "12px"
+      },
+      [theme.breakpoints.up("md")]: {
+        fontSize: "20px"
+      },
       width: '100%',
+      minWidth: '400px',
       height: '60vh',
       display: 'flex',
       flexDirection: 'column',
@@ -13,10 +20,10 @@ const useStyles = makeStyles({
         width: '85%',
         margin: '0 auto',
         textAlign: 'center',
-        lineHeight: 2
+        lineHeight: 2,
       }
     }
-  });
+  }));
 
    function Art2() {
     const classes = useStyles();
