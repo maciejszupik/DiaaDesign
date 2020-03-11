@@ -12,7 +12,6 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
     minWidth: '400px',
     height: '20vh',
-    minHeight: '200px',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-start',
@@ -26,16 +25,16 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-   function Art3() {
+   function Art4() {
     const classes = useStyles();
   
     return (
         <div className={classes.root}>
-          <h2>portfolio</h2>
+         
           <p>
-            Poniżej przedstawiamy część naszych projektów, więcej znajdziesz w zakładce PORTFOLIO
+            ART 4
           </p> 
         </div>
     );
   }
-export default Art3;
+export default Art4;

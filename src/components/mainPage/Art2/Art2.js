@@ -4,14 +4,17 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles(theme => ({
     root: {
       [theme.breakpoints.down("sm")]: {
-        fontSize: "12px"
+        fontSize: "12px",
+        height: '40vh',
+        minHeight: '300px'
       },
       [theme.breakpoints.up("md")]: {
-        fontSize: "20px"
+        fontSize: "20px",
+        height: '60vh',
+        minHeight: '400px'
       },
       width: '100%',
       minWidth: '400px',
-      height: '60vh',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'flex-start',
