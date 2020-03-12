@@ -35,7 +35,7 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     alignItems: "center",
     fontWeight: 500,
-    fontSize: '18px'
+    fontSize: '15px'
   },
   headerMenu: {
     display: "flex",
@@ -51,20 +51,20 @@ function Header() {
     <div className={classes.root}>
       <Grid item xs={12} container direction="row" justify="space-between">
         <div className={classes.headerLogo}>
-          <img src={DiaaLogo} alt="logo" />
+          <img src={DiaaLogo} alt="logo" width="110" height="56"/>
         </div>
 
-        <Hidden only={["xs"]}>
+        <Hidden only={["sm","xs"]}>
           <div className={classes.phone}>t.: +48 793 691 570</div>
           <div className={classes.headerSocial}>
           <Link href="#" target="_blank" color='inherit'>
-            <Facebook style={{ fontSize: 30 }}/>
+            <Facebook style={{ fontSize: 22 }}/>
           </Link>
           <Link href="#" target="_blank" color='inherit'>
-            <Instagram style={{ fontSize: 30 }}/>
+            <Instagram style={{ fontSize: 22 }}/>
             </Link>
             <Link href="#" target="_blank" color='inherit'>
-            <Pinterest style={{ fontSize: 30 }}/>
+            <Pinterest style={{ fontSize: 22 }}/>
             </Link>
           </div>
         </Hidden>
