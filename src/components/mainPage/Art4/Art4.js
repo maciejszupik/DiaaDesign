@@ -6,7 +6,8 @@ const useStyles = makeStyles(theme => ({
     width: "60%",
     margin: "0 auto",
     display: "flex",
-    flexDirection: "column"
+    flexDirection: "column",
+    marginBottom: '100px'
   },
   step: {
     fontSize: '15px',

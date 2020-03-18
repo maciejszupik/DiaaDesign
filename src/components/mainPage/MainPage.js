@@ -5,6 +5,7 @@ import Art3 from './Art3';
 import Gallery from './Gallery';
 import Art4 from './Art4';
 import ContactForm from './../ContactForm';
+import Footer from './../Footer';
 
 class MainPage extends Component {
     render() {
@@ -16,6 +17,7 @@ class MainPage extends Component {
                 <Gallery />
                 <Art4 />
                 <ContactForm />
+                <Footer />
 
             </div>
         );

@@ -36,14 +36,18 @@ const useStyles = makeStyles(theme => ({
     margin: '0 auto',
     textAlign: 'center',
     lineHeight: 2,
+    "& p": {
+        marginBottom: '60px'
+      }
 
   },
   container: {
     width: "60%",
     margin: "0 auto",
+    marginBottom: '100px',
     "& p": {
       textAlign: "center",
-      fontSize: "13px"
+      fontSize: "13px",
     },
     "& h4": {
       textAlign: "center"
@@ -121,7 +125,7 @@ function ContactForm() {
               id="outlined-basic"
               label="Wiadomość"
               variant="outlined"
-              multiline="true"
+              multiline={true}
               rows="6"
             />
           </form>
