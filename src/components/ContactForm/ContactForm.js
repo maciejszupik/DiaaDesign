@@ -33,12 +33,12 @@ const useStyles = makeStyles(theme => ({
     background: "#050d18"
   },
   text: {
-    [theme.breakpoints.down("sm")]: {
-      fontSize: "12px"
-    },
-    [theme.breakpoints.up("md")]: {
-      fontSize: "15px"
-    },
+    // [theme.breakpoints.down("sm")]: {
+    //   fontSize: "12px"
+    // },
+    // [theme.breakpoints.up("md")]: {
+    //   fontSize: "15px"
+    // },
     marginTop: '30px',
     width: '80%',
     margin: '0 auto',
