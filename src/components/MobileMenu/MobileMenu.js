@@ -6,10 +6,14 @@ import Instagram from "@material-ui/icons/Instagram";
 import Pinterest from "@material-ui/icons/Pinterest";
 import Facebook from "@material-ui/icons/Facebook";
 import Link from "@material-ui/core/Link";
+import { NavLink } from "react-router-dom";
 
 const useStyles = makeStyles({
   list: {
     width: 250
+  },
+  link: {
+    color: 'black'
   },
   fullList: {
     width: "auto"
@@ -24,19 +28,19 @@ const useStyles = makeStyles({
     }
   },
   sidebarSocials: {
-    height: '100%',
-    marginLeft: '-40px',
-    display: 'flex',
+    height: "100%",
+    marginLeft: "-40px",
+    display: "flex",
     flexDirection: "column",
-    justifyContent: 'flex-end',
+    justifyContent: "flex-end",
     "& ul": {
       listStyleType: "none",
       display: "flex",
       flexDirection: "row",
-      justifyContent: 'center',
+      justifyContent: "center",
       "& li": {
-        marginLeft: '5%',
-        marginRight: '5%'
+        marginLeft: "5%",
+        marginRight: "5%"
       }
     }
   }
@@ -82,8 +86,12 @@ function MobileMenu() {
         {sideList("right")}
         <div className={classes.mobileList}>
           <ul>
-            <li>STRONA GŁÓWNA</li>
-            <li>OFERTA</li>
+            <li>
+              <NavLink className={classes.link} to="/">STRONA GŁÓWNA</NavLink>
+            </li>
+            <li>
+              <NavLink className={classes.link} to="/Offer">OFERTA</NavLink>
+            </li>
             <li>PORTFOLIO</li>
             <li>BLOG</li>
             <li>KONTAKT</li>
