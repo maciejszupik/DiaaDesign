@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
         // height: '40vh',
         // minHeight: '300px'
       },
-      marginTop: '20px',
+      marginTop: '100px',
       width: '100%',
       minWidth: '300px',
       display: 'flex',

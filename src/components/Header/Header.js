@@ -11,12 +11,15 @@ import MobileMenu from '../MobileMenu';
 
 const useStyles = makeStyles(theme => ({
   root: {
+    background: "#050d18", 
     flexGrow: 1,
     width: "100%",
     color: "white",
-    marginTop: "3vh",
-    position: 'fixed',
-    top: 0
+    height: '80px',
+    position: 'sticky',
+    zIndex: "1",
+    top: 0,
+    display: 'flex'
   },
   headerLogo: {
     minWidth: "40%",

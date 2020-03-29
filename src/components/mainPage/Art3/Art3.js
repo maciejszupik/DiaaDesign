@@ -9,7 +9,7 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up("md")]: {
       fontSize: "15px"
     },
-    marginTop: '20px',
+    marginTop: '100px',
     marginBottom: '20px',
     width: '100%',
     minWidth: '300px',
