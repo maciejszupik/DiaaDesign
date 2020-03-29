@@ -22,6 +22,7 @@ const currencies = [
 
 const useStyles = makeStyles(theme => ({
   root: {
+    
     width: "100%",
     "& > *": {
       width: "100%"
@@ -32,6 +33,13 @@ const useStyles = makeStyles(theme => ({
     background: "#050d18"
   },
   text: {
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "12px"
+    },
+    [theme.breakpoints.up("md")]: {
+      fontSize: "15px"
+    },
+    marginTop: '30px',
     width: '80%',
     margin: '0 auto',
     textAlign: 'center',
@@ -57,7 +65,7 @@ const useStyles = makeStyles(theme => ({
 
 function ContactForm() {
   const classes = useStyles();
-  const [currency, setCurrency] = React.useState("EUR");
+  const [currency, setCurrency] = React.useState("wyc");
 
   const handleChange = event => {
     setCurrency(event.target.value);
@@ -66,7 +74,7 @@ function ContactForm() {
   return (
     <>
       <div className={classes.text}>
-        <h2>napisz do nas</h2>
+        <h1>napisz do nas</h1>
         <p>
           Jeśli masz jakieś pytania, chętnie na nie odpowiemy, wyślij nam maila
           lub skorzystaj z poniższego formularza.<br></br> Chciałeś tylko prosić o

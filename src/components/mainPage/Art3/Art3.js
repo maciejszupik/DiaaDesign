@@ -4,15 +4,17 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles(theme => ({
   root: {
     [theme.breakpoints.down("sm")]: {
-      fontSize: "10px"
+      fontSize: "12px"
     },
     [theme.breakpoints.up("md")]: {
       fontSize: "15px"
     },
+    marginTop: '20px',
+    marginBottom: '20px',
     width: '100%',
     minWidth: '300px',
-    height: '20vh',
-    minHeight: '200px',
+    // height: '20vh',
+    // minHeight: '200px',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-start',
@@ -31,7 +33,7 @@ const useStyles = makeStyles(theme => ({
   
     return (
         <div className={classes.root}>
-          <h2>portfolio</h2>
+          <h1>portfolio</h1>
           <p>
             Poniżej przedstawiamy część naszych projektów, więcej znajdziesz w zakładce PORTFOLIO
           </p> 

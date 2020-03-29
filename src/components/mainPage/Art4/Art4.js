@@ -1,35 +1,19 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
+import Hidden from "@material-ui/core/Hidden";
+import Full from "./Full";
+import Mobile from "./Mobile";
+
 const useStyles = makeStyles(theme => ({
   root: {
-    width: "60%",
-    margin: "0 auto",
-    display: "flex",
-    flexDirection: "column",
-    marginBottom: '100px'
-  },
-  step: {
-    fontSize: '15px',
-    width: "100%",
-    display: "flex",
-    justifyContent: "flex-start",
-    flexDirection: "row",
-    marginTop: '50px',
-    "& p": {
-      marginLeft: '20px'
+    width: '80%',
+    margin: '0 auto',
+    marginTop: '30px',
+    marginBottom: '30px',
+    "& h2": {
+      textAlign: 'center'
     }
-  },
-  circle: {
-    // position: 'relative',
-    top: '10px',
-    width: '60px',
-    height: '60px',
-    border: "1px solid black",
-    borderRadius: '50%',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center'
   }
 }));
 
@@ -37,28 +21,19 @@ function Art4() {
   const classes = useStyles();
 
   return (
+    <>
     <div className={classes.root}>
-      <div className={classes.step}>
-        <div className={classes.circle}>1</div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis vulputate dolor, nec lobortis lacus ullamcorper eget. Morbi molestie, metus in consectetur posuere, quam dui gravida purus, sit amet malesuada ligula justo id magna. Etiam posuere tincidunt scelerisque. Sed justo elit, tincidunt sit amet odio a, viverra luctus arcu. Aenean facilisis posuere felis, nec convallis ligula lacinia ut. Vestibulum dictum risus sed quam convallis fermentum. Sed ac tempor lorem.</p>
-      </div>
-      <div className={classes.step}>
-        <div className={classes.circle}>2</div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis vulputate dolor, nec lobortis lacus ullamcorper eget. Morbi molestie, metus in consectetur posuere, quam dui gravida purus, sit amet malesuada ligula justo id magna. Etiam posuere tincidunt scelerisque. Sed justo elit, tincidunt sit amet odio a, viverra luctus arcu. Aenean facilisis posuere felis, nec convallis ligula lacinia ut. Vestibulum dictum risus sed quam convallis fermentum. Sed ac tempor lorem.</p>
-      </div>
-      <div className={classes.step}>
-        <div className={classes.circle}>3</div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis vulputate dolor, nec lobortis lacus ullamcorper eget. Morbi molestie, metus in consectetur posuere, quam dui gravida purus, sit amet malesuada ligula justo id magna. Etiam posuere tincidunt scelerisque. Sed justo elit, tincidunt sit amet odio a, viverra luctus arcu. Aenean facilisis posuere felis, nec convallis ligula lacinia ut. Vestibulum dictum risus sed quam convallis fermentum. Sed ac tempor lorem.</p>
-      </div>
-      <div className={classes.step}>
-        <div className={classes.circle}>4</div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis vulputate dolor, nec lobortis lacus ullamcorper eget. Morbi molestie, metus in consectetur posuere, quam dui gravida purus, sit amet malesuada ligula justo id magna. Etiam posuere tincidunt scelerisque. Sed justo elit, tincidunt sit amet odio a, viverra luctus arcu. Aenean facilisis posuere felis, nec convallis ligula lacinia ut. Vestibulum dictum risus sed quam convallis fermentum. Sed ac tempor lorem.</p>
-      </div>
-      <div className={classes.step}>
-        <div className={classes.circle}>5</div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis vulputate dolor, nec lobortis lacus ullamcorper eget. Morbi molestie, metus in consectetur posuere, quam dui gravida purus, sit amet malesuada ligula justo id magna. Etiam posuere tincidunt scelerisque. Sed justo elit, tincidunt sit amet odio a, viverra luctus arcu. Aenean facilisis posuere felis, nec convallis ligula lacinia ut. Vestibulum dictum risus sed quam convallis fermentum. Sed ac tempor lorem.</p>
-      </div>
+      <h2>
+      jak wygląda proces projektowy?
+      </h2>
     </div>
+      <Hidden only={["md", "lg", "xl", "sm"]}>
+        <Mobile />
+      </Hidden>
+      <Hidden only={["xs"]}>
+        <Full />
+      </Hidden>
+    </>
   );
 }
 export default Art4;

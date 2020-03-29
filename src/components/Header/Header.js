@@ -55,7 +55,7 @@ function Header() {
         </div>
 
         <Hidden only={["sm","xs"]}>
-          <div className={classes.phone}>t.: +48 793 691 570</div>
+          <div className={classes.phone}>t.: +48 790 467 567</div>
           <div className={classes.headerSocial}>
           <Link href="#" target="_blank" color='inherit'>
             <Facebook style={{ fontSize: 22 }}/>

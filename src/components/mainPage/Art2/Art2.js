@@ -4,15 +4,16 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles(theme => ({
     root: {
       [theme.breakpoints.down("sm")]: {
-        fontSize: "10px",
-        height: '20vh',
-        minHeight: '250px'
+        fontSize: "12px",
+        // height: '20vh',
+        // minHeight: '250px'
       },
       [theme.breakpoints.up("md")]: {
         fontSize: "15px",
-        height: '40vh',
-        minHeight: '300px'
+        // height: '40vh',
+        // minHeight: '300px'
       },
+      marginTop: '20px',
       width: '100%',
       minWidth: '300px',
       display: 'flex',
@@ -20,6 +21,7 @@ const useStyles = makeStyles(theme => ({
       justifyContent: 'flex-start',
       alignItems: 'center',
       "& p": {
+        
         width: '85%',
         margin: '0 auto',
         textAlign: 'center',
@@ -33,7 +35,7 @@ const useStyles = makeStyles(theme => ({
   
     return (
         <div className={classes.root}>
-          <h2>diaa interior design</h2>
+          <h1>diaa interior design</h1>
           <p>
             Przestrzeń w której żyjemy musi przede wszystkim nam służyć, dlatego też słuchamy naszych Klientów i tworzymy wnętrza 
             idealnie dopasowane do ich potrzeb i budżetu, a główną ideą przyświecającą wszystkim projektom 
