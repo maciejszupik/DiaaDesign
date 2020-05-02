@@ -35,15 +35,11 @@ function Mobile() {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography className={classes.heading}>OPCJA 1</Typography>
+            <Typography className={classes.heading}>ANALIZA POTRZEB</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+            By jak najlepiej poznać twoje potrzeby prosimy Cię o wypełnienie specjalnie przygotowanego formularza, który pozwoli nam lepiej poznać twoje zwyczaje, prowadzony tryb życia, czy ulubione style, kolory i materiały. Będzie on swoistą bazą, na której opierać będzie się cały projekt.
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
@@ -53,15 +49,11 @@ function Mobile() {
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
-            <Typography className={classes.heading}>OPCJA 2</Typography>
+            <Typography className={classes.heading}>INWENTARYZACJA</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+            Przed rozpoczęciem właściwego procesu projektowego niezbędne jest poznanie dokładnych wymiarów poszczególnych wnętrz. Samodzielnie wykonujemy inwentaryzajcę lub pracujemy na dostarczonej nam dokumentacji.
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
@@ -71,15 +63,11 @@ function Mobile() {
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
-            <Typography className={classes.heading}>OPCJA 3</Typography>
+            <Typography className={classes.heading}>UKŁADY FUNKCJONALNE</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+            Na podstawie dwóch poprzednich kroków proponujemy Ci kilka koncepcji układów funkcjonalnych wnętrza, wykonane są one w formie rzutów poziomych z wymiarowaniem i zachowaniem skali. Znajdziesz na nich propozycje rozplanowania wnętrza z uwzględnieniem rozmieszczenia mebli i
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
@@ -89,18 +77,29 @@ function Mobile() {
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
-            <Typography className={classes.heading}>OPCJA 4</Typography>
+            <Typography className={classes.heading}>WIZUALIZACJE</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+            Po wybraniu i zaakceptowaniu konkretnego układu funkcjonalnego zabieramy się za przygotowanie projektu w formie 3d. Pracujemy na realnych materiałach i meblach, które mieszczą się w budżecie klienta. Dzięki serii fotorealistycznych wizualizacji będziesz w stanie zobaczyć, jak finalniebędzie wyglądało twoje wnętrze. Od niedawna oferujemy także możliwość stworzenia panoramy 360stopni z
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
+        <ExpansionPanel>
+          <ExpansionPanelSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <Typography className={classes.heading}>DOKUMENTACJA TECHNICZNA</Typography>
+          </ExpansionPanelSummary>
+          <ExpansionPanelDetails>
+            <Typography>
+            Ostatni i jeden z najważniejszych etapów procesu projektowego. Dzięki starannie wykonanej dokumentacji technicznej bez przeszkód zrealizujesz cały projekt. Znajdziesz tam m.in. plan zmian budowlanych, rozmieszczenie punktów elektrycznych, instalacji wod-kan i c.o., projekt sufitów podwieszanych, ułożenia podłóg, płytek, kolorystykę ścian, czy szczegółowe rysunki mebli wykonanych na zamówienie. Dodatkowo, w zależności od wybranego pakietu otrzymasz także kosztorys wszelkich prac remontowo-wykończeniowych oraz listę produktów, których użyto w
+            </Typography>
+          </ExpansionPanelDetails>
+        </ExpansionPanel>
+
       </div>
     
     

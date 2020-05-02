@@ -19,37 +19,43 @@ function Full() {
 
   return (
     <div className={classes.root}>
-      <Steps direction="vertical" >
+      <Steps direction="vertical" size="default" >
         <Step
         status="process"
-          title="Finishdded"
-          description="This is a descriptionThis is a descriptionThis is a descriptionThis is a descriptionThis is a descriptionThis is a descriptionThis is a description."
+          title="ANALIZA POTRZEB"
+          description="By jak najlepiej poznać twoje potrzeby prosimy Cię o wypełnienie specjalnie przygotowanego formularza,
+           który pozwoli nam lepiej poznać twoje zwyczaje, prowadzony tryb życia, czy ulubione style, kolory i materiały.
+            Będzie on swoistą bazą, na której opierać będzie się cały projekt."
         />
         <Step
         status="process"
-          title="In Progress"
-          description="This isThis is a descriptionThis is a descriptionThis is a descriptionThis is a descriptionThis is a descriptionThis is a descriptionThis is a descriptionThis is a description a description."
+          title="INWENTARYZACJA"
+          description="Przed rozpoczęciem właściwego procesu projektowego niezbędne jest poznanie dokładnych wymiarów poszczególnych wnętrz.
+           Samodzielnie wykonujemy inwentaryzajcę lub pracujemy na dostarczonej nam dokumentacji."
         />
         <Step
         status="process"
-          title="Waiting"
-          description="This is a dThis is a descriptionThis is a descriptionThis is a descriptionThis is a descriptionThis is a descriptionThis is a descriptionThis is a descriptionescription."
+          title="UKŁADY FUNKCJONALNE"
+          description="Na podstawie dwóch poprzednich kroków proponujemy Ci kilka koncepcji układów funkcjonalnych wnętrza, 
+          wykonane są one w formie rzutów poziomych z wymiarowaniem i zachowaniem skali.
+           Znajdziesz na nich propozycje rozplanowania wnętrza z uwzględnieniem rozmieszczenia mebli i"
         />
         <Step
         status="process"
-          title="Waiting"
-          description="This is a dThis is a descriptionThis is a descriptionThis is a descriptionThis is a descriptionThis is a descriptionThis is a descriptionThis is a descriptionescription."
+          title="WIZUALIZACJE"
+          description="Po wybraniu i zaakceptowaniu konkretnego układu funkcjonalnego zabieramy się za przygotowanie projektu w formie 3d.
+           Pracujemy na realnych materiałach i meblach, które mieszczą się w budżecie klienta. Dzięki serii fotorealistycznych 
+           wizualizacji będziesz w stanie zobaczyć, jak finalniebędzie wyglądało twoje wnętrze. Od niedawna oferujemy także możliwość stworzenia panoramy 360stopni z"
         />
         <Step
         status="process"
-          title="Waiting"
-          description="This is a dThis is a descriptionThis is a descriptionThis is a descriptionThis is a descriptionThis is a descriptionThis is a descriptionThis is a descriptionescription."
+          title="DOKUMENTACJA TECHNICZNA"
+          description="Ostatni i jeden z najważniejszych etapów procesu projektowego. Dzięki starannie wykonanej dokumentacji technicznej 
+          bez przeszkód zrealizujesz cały projekt. Znajdziesz tam m.in. plan zmian budowlanych, rozmieszczenie punktów elektrycznych, 
+          instalacji wod-kan i c.o., projekt sufitów podwieszanych, ułożenia podłóg, płytek, kolorystykę ścian, czy szczegółowe rysunki mebli wykonanych na zamówienie. 
+          Dodatkowo, w zależności od wybranego pakietu otrzymasz także kosztorys wszelkich prac remontowo-wykończeniowych oraz listę produktów, których użyto w"
         />
-        <Step
-        status="process"
-          title="Waiting"
-          description="This is a dThis is a descriptionThis is a descriptionThis is a descriptionThis is a descriptionThis is a descriptionThis is a descriptionThis is a descriptionescription."
-        />
+        
       </Steps>
     </div>
   );

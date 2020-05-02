@@ -3,10 +3,12 @@ import ContactForm from "./../ContactForm";
 import Footer from "./../Footer";
 import Header from "./../Header";
 import { makeStyles } from "@material-ui/core/styles";
+import List from "./List"
 // import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles(theme => ({
   root: {
+    fontSize: '18px',
     width: '80%',
     margin: '0 auto',
     marginTop: '100px',
@@ -33,7 +35,7 @@ function Offer() {
                jesteśmy też otwarci na realizację projektów w innych regionach Polski, czy zdalną formę współpracy.
                By w jak najlepszym stopniu sprostać twoim wymaganiom i potrzebom, proponujemy różne zakresy??</p>
         </div>
-
+        <List />
         <ContactForm />
         <Footer />
       </div>

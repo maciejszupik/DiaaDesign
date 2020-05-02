@@ -7,9 +7,10 @@ import Mobile from "./Mobile";
 
 const useStyles = makeStyles(theme => ({
   root: {
+    fontSize: '18px',
     width: '80%',
     margin: '0 auto',
-    marginTop: '30px',
+    marginTop: '100px',
     marginBottom: '30px',
     "& h2": {
       textAlign: 'center'
