@@ -34,8 +34,11 @@ function Offer() {
           <p>Działamy głównie na terenie Krakowa i małopolski, a także Zamościa, Lublina i Warszawy,
                jesteśmy też otwarci na realizację projektów w innych regionach Polski, czy zdalną formę współpracy.
                By w jak najlepszym stopniu sprostać twoim wymaganiom i potrzebom, proponujemy różne zakresy??</p>
-        </div>
+        
         <List />
+        <p>Dodatkowo na prośbę inwerstora możemy również przygotować wizualizację w formie panoramy 360 stopni.</p>
+        <p>Potrzebujesz skorzystać z innego zakresu projektowego? Napisz do nas, a przygotujemy ofertę specjalnie</p>
+        </div>
         <ContactForm />
         <Footer />
       </div>

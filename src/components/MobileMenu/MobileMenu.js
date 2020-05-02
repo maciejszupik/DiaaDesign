@@ -92,9 +92,13 @@ function MobileMenu() {
             <li>
               <NavLink className={classes.link} to="/Offer">OFERTA</NavLink>
             </li>
-            <li>PORTFOLIO</li>
+            <li>
+            <NavLink className={classes.link} to="/Portfolio">PORTFOLIO</NavLink>
+            </li>
             <li>BLOG</li>
-            <li>KONTAKT</li>
+            <li>
+            <NavLink className={classes.link} to="/Contact">KONTAKT</NavLink>
+            </li>
           </ul>
         </div>
         <div className={classes.sidebarSocials}>

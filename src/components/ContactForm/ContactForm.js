@@ -74,7 +74,7 @@ function ContactForm() {
   return (
     <>
       <div className={classes.text}>
-        <h1>napisz do nas</h1>
+        <h1>napisz do nas!</h1>
         <p>
           Jeśli masz jakieś pytania, chętnie na nie odpowiemy, wyślij nam maila
           lub skorzystaj z poniższego formularza.<br></br> Chciałeś tylko prosić o
