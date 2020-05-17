@@ -1,7 +1,9 @@
 import React from "react";
 import Footer from "./../Footer";
 import Header from "./../Header";
+import Gallery from './Gallery'
 import { makeStyles } from "@material-ui/core/styles";
+
 
 
 const useStyles = makeStyles(theme => ({
@@ -22,7 +24,7 @@ function Portfolio() {
       <div>
         <Header />
         <div className={classes.root}>
-          PORTFOLIO
+          <Gallery />
         </div>
         <Footer />
       </div>

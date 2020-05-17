@@ -5,14 +5,22 @@ import imgTop from "./image.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: "80%",
+    width: "85%",
     margin: "0 auto",
     marginBottom: '50px'
   },
   element: {
-      minWidth: '250px',
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "12px"
+    },
+     [theme.breakpoints.up("md")]: {
+       fontSize: "15px"
+     },
+    fontSize: '14px',
+    minWidth: '200px',
+    maxWidth: '320px',
     marginTop: '30px',
-    width: "90%",
+    width: "99%",
     margin: "0 auto",
     border: "1px solid black",
     display: "flex",
@@ -43,7 +51,7 @@ function List() {
     <>
       <div className={classes.root}>
         <Grid container spacing={1}>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={6} md={6} lg={4}>
             <div className={classes.element}>
               <img src={imgTop} alt="imgTop" />
               <h2>Projekt Koncepcyjny</h2>
@@ -76,7 +84,7 @@ function List() {
               </ul>
             </div>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={6} md={6} lg={4}>
             <div className={classes.element}>
               <img src={imgTop} alt="imgTop" />
               <h2>Projekt Kompleksowy</h2>
@@ -109,7 +117,7 @@ function List() {
               </ul>
             </div>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={6} md={6} lg={4}>
             <div className={classes.element}>
               <img src={imgTop} alt="imgTop" />
               <h2>Projekt Pod Klucz</h2>
@@ -142,7 +150,7 @@ function List() {
               </ul>
             </div>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={6} md={6} lg={4}>
             <div className={classes.element}>
               <img src={imgTop} alt="imgTop" />
               <h2>Projekt Koncepcyjny</h2>
@@ -175,7 +183,7 @@ function List() {
               </ul>
             </div>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={6} md={6} lg={4}>
             <div className={classes.element}>
               <img src={imgTop} alt="imgTop" />
               <h2>Projekt Kompleksowy</h2>
@@ -208,7 +216,7 @@ function List() {
               </ul>
             </div>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={6} md={6} lg={4}>
             <div className={classes.element}>
               <img src={imgTop} alt="imgTop" />
               <h2>Projekt Pod Klucz</h2>

@@ -46,6 +46,8 @@ const useStyles = makeStyles({
   }
 });
 
+
+
 function MobileMenu() {
   const classes = useStyles();
   const [state, setState] = React.useState({
@@ -71,7 +73,7 @@ function MobileMenu() {
       onKeyDown={toggleDrawer(side, false)}
     />
   );
-
+  
   return (
     <div>
       <MenuIcon
@@ -95,7 +97,7 @@ function MobileMenu() {
             <li>
             <NavLink className={classes.link} to="/Portfolio">PORTFOLIO</NavLink>
             </li>
-            <li>BLOG</li>
+            {/* <li>BLOG</li> */}
             <li>
             <NavLink className={classes.link} to="/Contact">KONTAKT</NavLink>
             </li>

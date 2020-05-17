@@ -7,14 +7,15 @@ import Instagram from "@material-ui/icons/Instagram";
 import Pinterest from "@material-ui/icons/Pinterest";
 import Facebook from "@material-ui/icons/Facebook";
 import Link from "@material-ui/core/Link";
+import { NavLink } from "react-router-dom";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
     height: "180px",
     background: "#050d18",
-    fontSize: "12px",
-    color: "#ffffff"
+    fontSize: "13px",
+    color: "#ffffff",
   },
   footer: {
     width: "100%",
@@ -22,32 +23,34 @@ const useStyles = makeStyles(theme => ({
     margin: "0 auto",
     display: "flex",
     flexDirection: "row",
-    alignItems: "center"
+    alignItems: "center",
   },
   menu: {
     "& > ul": {
       listStyleType: "none",
       "& > li": {
-        lineHeight: "25px"
-      }
-    }
+        lineHeight: "25px",
+      },
+    },
   },
   logo: {
     display: "flex",
-    alignItems: "center"
+    alignItems: "center",
   },
   social: {
-    minWidth: '150px',
+    minWidth: "150px",
     "& > ul": {
       listStyleType: "none",
       "& > li": {
         display: "flex",
         flexDirection: "row",
         alignItems: "center",
-        justifyContent: 'space-between'
-
-      }
-    }
+        justifyContent: "space-between",
+      },
+    },
+  },
+  link: {
+    color: 'white'
   },
   legal: {
     width: "80%",
@@ -56,8 +59,8 @@ const useStyles = makeStyles(theme => ({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "flex-start",
-    fontSize: "10px"
-  }
+    fontSize: "10px",
+  },
 }));
 
 function Footer() {
@@ -74,11 +77,27 @@ function Footer() {
           <Hidden only={["sm", "xs"]}>
             <div className={classes.menu}>
               <ul>
-                <li>STRONA GŁÓWNA</li>
-                <li>OFERTA</li>
-                <li>PORTFOLIO</li>
-                <li>BLOG</li>
-                <li>KONTAKT</li>
+                <li>
+                  <NavLink className={classes.link} to="/">
+                    STRONA GŁÓWNA
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink className={classes.link} to="/Offer">
+                    OFERTA
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink className={classes.link} to="/Portfolio">
+                    PORTFOLIO
+                  </NavLink>
+                </li>
+                {/* <li>BLOG</li> */}
+                <li>
+                  <NavLink className={classes.link} to="/Contact">
+                    KONTAKT
+                  </NavLink>
+                </li>
               </ul>
             </div>
             <div className={classes.social}>
